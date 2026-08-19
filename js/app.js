@@ -45,7 +45,7 @@ overlay.addEventListener("click", closeMenu);
 
 function openResource(type) {
     const links = {
-        computer: "computer/basics",           
+        computer: "https://comlearnhub.github.io/basic/",           
         files: "file-types/index.html",
         command: "Command" 
     };
