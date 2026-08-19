@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <meta
+        name="description"
+        content="LearnHub - Computer Courses and File Reference">
+    <title>LearnHub</title>
+    <link
+        rel="stylesheet"
+        href="css/style.css">
+</head>
+<body>
+
+<div class="app">
+    <!-- SIDEBAR -->
+    <aside id="sidebar">
+        <div class="brand">
+            <b>L</b>
+            <strong>
+                LearnHub
+                <small>Learning Hub</small>
+            </strong>
+        </div>
+        <label>
+            LEARNHUB
+        </label>
+        <nav>
+            <button
+                class="nav active"
+                data-section="home">
+                <span>⌂</span>
+                <span>Home</span>
+            </button>
+
+            <button
+                class="nav"
+                data-section="computer">
+                <span>💻</span>
+                <span>Computer Courses</span>
+            </button>
+
+
+            <button
+                class="nav"
+                data-section="files">
+                <span>📁</span>
+                <span>File Types</span>
+            </button>
+
+            <button
+                class="nav"
+                data-section="command">
+                <span>📟</span>
+                <span>Command</span>
+            </button>
+        </nav>
+
+
+        <div class="side-note">
+            <span>✨</span>
+            <p>
+                One place for your basic
+                learning references.
+            </p>
+        </div>
+    </aside>
+
+    <!-- MAIN -->
+    <main>
+        <!-- HEADER -->
+        <header>
+            <button
+                id="menuBtn"
+                class="menu-btn">
+                ☰
+            </button>
+
+            <div class="heading">
+                <small>
+                    WELCOME TO
+                </small>
+                <h1>
+                    LearnHub
+                </h1>
+            </div>
+
+            <div class="search">
+                <span>⌕</span>
+                <input
+                    id="search"
+                    type="search"
+                    placeholder="Search LearnHub...">
+           </div>
+        </header>
+
+        <!-- HERO -->
+        <section class="hero">
+            <div class="hero-content">
+                <span class="pill">
+                    🚀 Learning made simple
+                </span>
+                <h2>
+                    Learn smarter.
+                    <br>
+                    <i>
+                        Explore everything.
+                    </i>
+                </h2>
+
+                <p>
+                    Access your Computer Course and
+                    File Types reference websites from
+                    one clean and responsive LearnHub
+                    dashboard.
+                </p>
+
+                <div class="hero-actions">
+                </div>
+
+            </div>
+
+
+            <div class="hero-art">
+
+                <div class="floating-card card-one">
+                    💻
+                </div>
+
+                <div class="floating-card card-two">
+                    📄
+                </div>
+
+                <div class="hub-orb">
+                    L
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- RESOURCES -->
+
+        <section class="content">
+            <div class="section-head">
+                <div>
+                    <small>
+                        YOUR LIBRARY
+                    </small>
+                    <h2>
+                        Explore LearnHub
+                    </h2>
+                </div>
+                <span id="resultCount">
+                    3 resources
+               </span>
+            </div>
+
+
+            <div
+                id="resourceGrid"
+                class="resource-grid">
+
+                <!-- COMPUTER -->
+                <article
+                    class="resource-card"
+                    data-resource="computer">
+                    <div class="resource-top">
+                        <div class="resource-icon">
+                            💻
+                        </div>
+                        <span class="arrow">
+                            ↗
+                        </span>
+                    </div>
+
+                    <span class="tag">
+                        COURSES
+                    </span>
+
+                    <h3>
+                        Computer Courses
+                    </h3>
+
+                    <p>
+                        Learn computer basics, Office,
+                        Developer, Web Developer,
+                        Professional, Design and Career
+                        skills.
+                    </p>
+
+                    <div class="resource-footer">
+                        <span>
+                            Learning Reference
+                        </span>
+                        <button
+                            data-open="computer">
+                            Open →
+                        </button>
+                    </div>
+                </article>
+
+
+                <!-- FILE TYPES -->
+                <article
+                    class="resource-card"
+                    data-resource="files">
+                    <div class="resource-top">
+                        <div class="resource-icon">
+                            📁
+                        </div>
+                        <span class="arrow">
+                            ↗
+                        </span>
+                    </div>
+
+                    <span class="tag">
+                        REFERENCE
+                    </span>
+
+                    <h3>
+                        File Types
+                    </h3>
+
+                    <p>
+                        Explore file extensions, short
+                        work, long work, real-world
+                        examples and Windows commands.
+                    </p>
+
+                    <div class="resource-footer">
+                        <span>
+                            File Reference
+                        </span>
+
+                        <button
+                            data-open="files">
+
+                            Open →
+                        </button>
+                    </div>
+                </article>
+
+                 <!-- Command Line -->
+                <article
+                    class="resource-card"
+                    data-resource="command">
+                    <div class="resource-top">
+                        <div class="resource-icon">
+                            📟
+                        </div>
+                        <span class="arrow">
+                            ↗
+                        </span>
+                    </div>
+
+                    <span class="tag">
+                        REFERENCE
+                    </span>
+
+                    <h3>
+                        Command
+                    </h3>
+
+                    <p>
+                        Explore Windows commands.
+                    </p>
+
+                    <div class="resource-footer">
+                        <span>
+                            command Reference
+                        </span>
+
+                        <button
+                            data-open="command">
+
+                            Open →
+                        </button>
+                    </div>
+                </article>
+
+            </div>
+
+
+            <!-- NO RESULT -->
+            <div
+                id="noResult"
+                class="no-result hidden">
+
+                <div>
+                    🔎
+                </div>
+
+                <h3>
+                    No resource found
+                </h3>
+
+                <p>
+                    Try Computer, Course, File,
+                    PDF or Windows.
+                </p>
+
+            </div>
+
+
+            <!-- QUICK ACCESS -->
+            <div class="quick-section">
+                <div class="section-head">
+                    <div>
+                        <small>
+                            QUICK ACCESS
+                        </small>
+                        <h2>
+                            Choose where to start
+                        </h2>
+                    </div>
+                </div>
+                <div class="quick-grid">
+                    <button
+                        class="quick-card"
+                        data-open="computer">
+                        <span>
+                            💻
+                        </span>
+                        <div>
+                            <b>
+                                Start Learning
+                            </b>
+                            <small>
+                                Computer courses & skills
+                            </small>
+                        </div>
+                        <strong>
+                            →
+                        </strong>
+                    </button>
+
+                    <button
+                        class="quick-card"
+                        data-open="files">
+                        <span>
+                            📂
+                        </span>
+                        <div>
+                            <b>
+                                Understand Files
+                            </b>
+                            <small>
+                                Extensions & real-world use
+                            </small>
+                        </div>
+                        <strong>
+                            →
+                        </strong>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <footer>
+
+            © 2026 LearnHub ·
+            Learning & Reference Hub
+
+        </footer>
+
+    </main>
+
+</div>
+
+
+<div
+    id="overlay"
+    class="overlay">
+</div>
+
+
+<script src="js/app.js"></script>
+
+</body>
+</html>
